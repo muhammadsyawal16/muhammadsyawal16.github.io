@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <!-- <link rel="stylesheet" href="aos.css"> -->
+  <style>
+    body {
+      background-color: #040D12;
+    }
+
+    .text-gradient {
+      font-size: 72px;
+      background: rgb(81,112,78);
+background: linear-gradient(151deg, rgba(81,112,78,1) 0%, rgba(31,58,49,1) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+    }
+
+    .text-shadow {
+      text-shadow: rgba(255, 255, 255, 0.178) 0px 0px 10px;
+    }
+
+    .text-highlight {
+      color: #0d2633;
+      font-weight: bolder;
+      font-size: 90px;
+      text-shadow: rgba(0, 0, 0, 0.3) 10px 10px 20px;
+    }
+
+    .skill-item {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 130px;
+      width: 130px;
+      min-height: 130px;
+      min-width: 130px;
+      max-height: 130px;
+      max-width: 130px;
+    }
+
+    .skill-item img {
+      height: 50%;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .navbar {
+      position: fixed !important;
+      z-index: 3;
+      background-color: #00000000;
+      width: 100%;
+      transition: 0.5s;
+    }
+
+    .project-list img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    #banner {
+      height: 100vh;
+      /* background-image: url('/bg2.png'); */
+      background-position: center;
+      background-size: cover;
+    }
+
+    .project-list {
+      background-color: #0d2633;
+    }
+
+    #profesi {
+      margin-left: 4px !important;
+      letter-spacing: 5px;
+      font-size: 40px;
+    }
+
+
+    .bn632-hover {
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      text-align: center;
+      border: none;
+      background-size: 300% 100%;
+      border-radius: 50px;
+      moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+    }
+
+    .bn632-hover:hover {
+      background-position: 100% 0;
+      moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+    }
+
+    .bn632-hover svg {
+      fill: white;
+      height: 24px;
+      width: 24px;
+    }
+
+    .bn632-hover:focus {
+      outline: none;
+    }
+
+    .bn632-hover.bn22 {
+      background-image: linear-gradient(to right,
+          #0ba360,
+          #3cba92,
+          #30dd8a,
+          #2bb673);
+      /* box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75); */
+    }
+
+    .foto-awal {
+      height: 95%;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .bn632-hover.bn21 {
+      background-image: linear-gradient(to right,
+          #fc6076,
+          #ff9a44,
+          #ef9d43,
+          #e75516);
+      /* box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75); */
+    }
+
+    @media screen and (max-width: 992px) {
+      #nama {
+        margin-top: 20px;
+      }
+
+      #banner {
+        height: auto;
+      }
+
+      .foto-awal {
+        margin-top: 50px;
+        max-height: auto;
+        max-width: 50%;
+      }
+    }
+
+
+    @media screen and (max-width: 750px) {
+      .text-highlight {
+        font-size: 10vw;
+      }
+
+      .text-gradient {
+        font-size: 8vw;
+      }
+
+      #profesi {
+        font-size: 5vw;
+      }
+
+    }
+  </style>
+  <script src="jquery.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+  tabindex="0" data-bs-offset="0">
+  <nav id="navbar" class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#banner">PORTOFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#tentang-saya">Tentang Saya</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#keahlian">Keahlian</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="banner" class="d-flex justify-content-center">
+
+    <div class="container row h-100">
+
+      <div id="foto" class="col-lg-4 order-lg-2 d-flex align-items-center justify-content-center h-100">
+        <img src="awal2.png" class="foto-awal" alt="">
+      </div>
+      <div id="nama" class="col-lg-8 order-lg-1 d-flex align-items-center">
+        <div data-aos="fade-up" data-aos-duration="1000" class="ms-5">
+          <h2 class="fw-bolder m-0 text-gradient" id="nama-text">MUHAMMAD SYAWAL AMIRULLAH</h2>
+          <h4 class=" m-0" id="profesi">WEB DEVELOPER</h4>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <button onclick="goto('https://www.instagram.com/syawal_am')"
+              class="btn px-3 bn632-hover bn21 d-flex align-items-center justify-content-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g>
+                  <path
+                    d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.308,0.06,2.655,0.358,3.608,1.311c0.962,0.962,1.251,2.296,1.311,3.608   c0.058,1.265,0.07,1.645,0.07,4.849c0,3.204-0.012,3.584-0.07,4.849c-0.059,1.301-0.364,2.661-1.311,3.608   c-0.962,0.962-2.295,1.251-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07s-3.584-0.012-4.849-0.07   c-1.291-0.059-2.669-0.371-3.608-1.311c-0.957-0.957-1.251-2.304-1.311-3.608c-0.058-1.265-0.07-1.645-0.07-4.849   c0-3.204,0.012-3.584,0.07-4.849c0.059-1.296,0.367-2.664,1.311-3.608c0.96-0.96,2.299-1.251,3.608-1.311   C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072C5.197,0.157,3.355,0.673,2.014,2.014   C0.668,3.36,0.157,5.198,0.072,7.052C0.014,8.332,0,8.741,0,12c0,3.259,0.014,3.668,0.072,4.948c0.085,1.853,0.603,3.7,1.942,5.038   c1.345,1.345,3.186,1.857,5.038,1.942C8.332,23.986,8.741,24,12,24c3.259,0,3.668-0.014,4.948-0.072   c1.854-0.085,3.698-0.602,5.038-1.942c1.347-1.347,1.857-3.184,1.942-5.038C23.986,15.668,24,15.259,24,12   c0-3.259-0.014-3.668-0.072-4.948c-0.085-1.855-0.602-3.698-1.942-5.038c-1.343-1.343-3.189-1.858-5.038-1.942   C15.668,0.014,15.259,0,12,0z" />
+                  <path
+                    d="M12,5.838c-3.403,0-6.162,2.759-6.162,6.162c0,3.403,2.759,6.162,6.162,6.162s6.162-2.759,6.162-6.162   C18.162,8.597,15.403,5.838,12,5.838z M12,16c-2.209,0-4-1.791-4-4s1.791-4,4-4s4,1.791,4,4S14.209,16,12,16z" />
+                  <circle cx="18.406" cy="5.594" r="1.44" />
+                </g>
+              </svg>
+
+              <p class="text-white m-0 text-truncate">syawal_am</p>
+            </button>
+            <button onclick="goto('https://api.whatsapp.com/send/?phone=%2B6287893931372')"
+              class="btn px-3 bn632-hover bn22 d-flex align-items-center justify-content-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g id="WA_Logo">
+                  <g>
+                    <path style="fill-rule:evenodd;clip-rule:evenodd;"
+                      d="M20.463,3.488C18.217,1.24,15.231,0.001,12.05,0    C5.495,0,0.16,5.334,0.157,11.892c-0.001,2.096,0.547,4.142,1.588,5.946L0.057,24l6.304-1.654    c1.737,0.948,3.693,1.447,5.683,1.448h0.005c6.554,0,11.89-5.335,11.893-11.893C23.944,8.724,22.708,5.735,20.463,3.488z     M12.05,21.785h-0.004c-1.774,0-3.513-0.477-5.031-1.378l-0.361-0.214l-3.741,0.981l0.999-3.648l-0.235-0.374    c-0.99-1.574-1.512-3.393-1.511-5.26c0.002-5.45,4.437-9.884,9.889-9.884c2.64,0,5.122,1.03,6.988,2.898    c1.866,1.869,2.893,4.352,2.892,6.993C21.932,17.351,17.498,21.785,12.05,21.785z M17.472,14.382    c-0.297-0.149-1.758-0.868-2.031-0.967c-0.272-0.099-0.47-0.149-0.669,0.148s-0.767,0.967-0.941,1.166    c-0.173,0.198-0.347,0.223-0.644,0.074c-0.297-0.149-1.255-0.462-2.39-1.475c-0.883-0.788-1.48-1.761-1.653-2.059    s-0.018-0.458,0.13-0.606c0.134-0.133,0.297-0.347,0.446-0.521C9.87,9.97,9.919,9.846,10.019,9.647    c0.099-0.198,0.05-0.372-0.025-0.521C9.919,8.978,9.325,7.515,9.078,6.92c-0.241-0.58-0.486-0.501-0.669-0.51    C8.236,6.401,8.038,6.4,7.839,6.4c-0.198,0-0.52,0.074-0.792,0.372c-0.272,0.298-1.04,1.017-1.04,2.479    c0,1.463,1.065,2.876,1.213,3.074c0.148,0.198,2.095,3.2,5.076,4.487c0.709,0.306,1.263,0.489,1.694,0.626    c0.712,0.226,1.36,0.194,1.872,0.118c0.571-0.085,1.758-0.719,2.006-1.413c0.248-0.694,0.248-1.29,0.173-1.413    C17.967,14.605,17.769,14.531,17.472,14.382z" />
+                  </g>
+                </g>
+              </svg>
+              <p class="text-white m-0 text-truncate">+6287893931372</p>
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <div class="container">
+    <div id="tentang-saya" class="pt-5">
+      <div class="d-flex justify-content-end">
+        <h3 class="text-highlight" data-aos="fade-up">TENTANG SAYA</h3>
+      </div>
+      <div class="d-flex flex-column align-items-center mt-5">
+        <!-- <img data-aos="fade-up" src="foto.jpg" alt="" srcset="" class="object-fit-cover rounded-5 shadow-lg"
+          style="height: 300px; width: 300px; object-position: center;"> -->
+          <table class="table table-borderless table-dark" style="width: fit-content;;">
+            <tbody>
+              <tr>
+                <th style="width: 200px;">Nama</th>
+                <td style="width: 1px;">:</td>
+                <td>Muhammad Syawal Amirullah</td>
+              </tr>
+              <tr class="mt-5">
+                <th class="pt-4">Alamat</th>
+                <td class="pt-4" style="width: 1px;">:</td>
+                <td class="pt-4">Barru, Jl. Sultan Hasanuddin</td>
+              </tr>
+              <tr>
+                <th class="pt-4">Tanggal Lahir</th>
+                <td class="pt-4" style="width: 1px;">:</td>
+                <td class="pt-4">Barru, 16 Desember 2001</td>
+              </tr>
+              <tr>
+                <th class="pt-4">Telepon</th>
+                <td class="pt-4" style="width: 1px;">:</td>
+                <td class="pt-4">+6287893931372</td>
+              </tr>
+              <tr>
+                <th class="pt-4">Email</th>
+                <td class="pt-4" style="width: 1px;">:</td>
+                <td class="pt-4">syawal.amirullah@gmail.com</td>
+              </tr>
+            </tbody>
+          </table>
+        <p data-aos="fade-up" class="mt-5" style="max-width: 800px; text-align: justify;">
+          Sebagai web developer, saya memiliki passion untuk terus belajar dan berkembang dalam menciptakan solusi
+          digital yang kreatif dan inovatif. Saya memiliki latar belakang pendidikan di bidang Sistem Informasi dan
+          penngalaman kerja sebagai freelance dalam 1 tahun terakhir. Saya mahir menggunakan bahasa pemrograman web
+          seperti HTML, CSS, PHP, dan Javascript. Juga beberapa frameword dan librari populer, seperti Laravel, Jquery,
+          dan Bootstrap.
+        </p>
+      </div>
+    </div>
+    <div id="keahlian" class="pt-5">
+      <div class="d-flex">
+        <h3 class="text-highlight" data-aos="fade-up">KEAHLIAN</h3>
+      </div>
+      <div class="d-flex justify-content-center mt-5 gap-3 flex-wrap" id="keahlian-data">
+      </div>
+    </div>
+    <div id="project" class="pt-5">
+      <div class="d-flex justify-content-end">
+        <h3 class="text-highlight" data-aos="fade-up">PROJECTS</h3>
+      </div>
+      <div class="d-flex flex-column mt-5 gap-3 flex-wrap gap-5" id="project-data">
+        <!-- <div class="row project-list shadow rounded-2">
+          <div class="col-md-4 p-4 d-flex align-items-center justify-content-center">
+            <img src="pro.jpg" alt="" class="rounded-3 shadow">
+          </div>
+          <div class="col p-4">
+            <h4>Sistem Pendukung Keputusan Panitera Terbaik</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit error quis nemo ut debitis enim atque officia
+              aperiam excepturi odio, est culpa saepe ratione, obcaecati dolorum labore corporis itaque ducimus nam sit
+              maxime sapiente veritatis! A, pariatur debitis hic dolore iusto molestias? Totam molestias et corporis
+              laborum in ipsum doloremque!</p>
+            <div class="d-flex gap-3">
+              <p>Stack:</p>
+              <a href="">Laravel</a>
+              <a href="">jquery</a>
+              <a href="">Bootstrap</a>
+              <a href="">AOS</a>
+            </div>
+            <div class="d-flex gap-3">
+              <a href="" class="btn btn-outline-light ">Detail</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <div style="margin-top: 100px;">
+
+  </div>
+  <!-- <script src="aos.js"></script> -->
+  <script>
+    function goto(url) {
+      window.location.href = url;
+    }
+
+    // AOS.init();
+    var keahlian = [
+      {
+        nama: 'Html',
+        icon: 'html.png'
+      }, {
+        nama: 'Css',
+        icon: 'css-3.png'
+      }, {
+        nama: 'Php',
+        icon: 'php.png'
+      }, {
+        nama: 'Mysql',
+        icon: 'mysql.png'
+      }, {
+        nama: 'Javascript',
+        icon: 'js.png'
+      }, {
+        nama: 'Jquery',
+        icon: 'jquery.png'
+      }, {
+        nama: 'Laravel',
+        icon: 'laravel.png'
+      },
+    ];
+
+    var project = [
+      {
+        judul: 'Barru Keren',
+        deskripsi: 'Di kampung halaman saya, terdapat banyak tempat wisata yang masih jarang diketahui baik penduduk lokal maupun dari luar. Maka dari itu project ini bertujuan untuk memperkenalkan tempat-tempat wisata yang ada di kampung saya kepada orang-orang sehingga dapat membantu mengembangkan pariwisata lokal.',
+        link: null,
+        gambar: '/project/barru.png',
+        stack: ['Laravel', 'Bootstrap', 'JQuery', 'Mysql', 'RestAPI', 'Splide', 'CompressJS', 'JustifiedGallery', 'TrixJS'],
+        status: 'Sementara',
+        tanggal: '2024/03/01'
+      }, {
+        judul: 'SPK Panitera Terbaik Menggunakan Metode SAW',
+        deskripsi: 'Website ini merupakan sebuah sistem untuk menentukan panitera terbaik di sebuah pengadilan negeri. Panitera terbaik ditentukan berdasarkan beberapa kriteria yang telah ditentukan, kriteria-kriteria tersebut kemudian di hitung menggunakan Metode Simple Additive Weighting untuk mendapatkan skor pada setiap panitera. Skor tersebut kemudian digunakan untuk menentukan panitera terbaik.',
+        link: null,
+        gambar: '/project/spk.png',
+        stack: ['Laravel', 'PHP', 'Bootstrap', 'JQuery', 'Mysql', 'RestAPI'],
+        status: 'Selesai',
+        tanggal: '2024/03/01'
+      }, {
+        judul: 'Prediksi Penjualan Udang Menggunakan Metode Least Square',
+        deskripsi: 'Manajemen stok barang merupakan sesuatu yang penting dalam sebuah usaha, kelebihan atau kekurangan stok barang dapat mempengaruhi jumlah kerugian dan keuntungan yang signifikan. Begitu pula saat menjual udang, manajemen stok udang sangat penting untuk dilakukan. Oleh karena itu Website ini dibuat untuk membantu user menentukan jumkah stok udang untuk bulan depan. Sistem akan mengambil 6-12 bulan data penjualan yang telah di input tiap bulannya, kemudian data tersebut dihitung menggunakan Metode Least Square untuk memprediksi penjualan bulan berikutnya.',
+        link: null,
+        gambar: '/project/udang.png',
+        stack: ['Laravel', 'PHP', 'Mysql'],
+        status: 'Selesai',
+        tanggal: '2023/07/01'
+      }, {
+        judul: 'Prediksi Penjualan Skincare Menggunakan Metode Least Square',
+        deskripsi: 'Project ini hampir sama dengan project diatas yaitu dibuat untuk membantu user menentukan jumkah stok skincate untuk bulan depan. Sistem akan mengambil 6-12 bulan data penjualan yang telah di input tiap bulannya, kemudian data tersebut dihitung menggunakan Metode Least Square untuk memprediksi penjualan bulan berikutnya.',
+        link: null,
+        gambar: '',
+        stack: ['Laravel', 'PHP', 'Mysql'],
+        status: 'Selesai',
+        tanggal: '2023/06/01'
+      }, {
+        judul: 'Sistem Monitoring Kegiatan PKL Siswa SMK',
+        deskripsi: 'Memantau kegiatan siswa selama masa PKL merupakan hal penting agar tetap berjalan sebagaimana mestinya dan dapat memberikan nilai yang sesuai dengan seharusnya. Maka dari itu web ini berguna untuk memantau kegiatan siswa berupa absensi, pengumpulan logbook harian, dan laporan akhir. Data kegiatan siswa tersebut akan diperiksa oleh guru pembimbin, kepala sekolah, dan mitra. Setelah kepala sekolah dan mitra memberikan acc terhadap laporan akhir siswa selanjutnya guru pembimbing akan menentukan nilai untuk siswa tersebut.',
+        link: null,
+        gambar: '/project/pkl.png',
+        stack: ['Laravel', 'PHP', 'Mysql'],
+        status: 'Selesai',
+        tanggal: '2023/06/01'
+      }, {
+        judul: 'Website Portofolio',
+        deskripsi: 'Website portofolio ini merupakan portofolio pertama saya untuk memaparkan apa saja kemampuan dan project yang telah saya kerjakan. Namun pada web tersebut memiliki banyak masalah dan desain yang kurang menarik, itu disebabkan karena portofolio tersebut dibuat saat saya baru saja belajar pemrograman web. Oleh karena itu saya membuat web portofolio yang baru yaitu web ini.',
+        link: null,
+        gambar: '/project/portofolio.png',
+        stack: ['Html', 'Css'],
+        status: 'Selesai',
+        tanggal: '2023/04/01'
+      },
+      // {
+      //   judul: '',
+      //   deskripsi: '',
+      //   detail: '',
+      //   stack: [
+      //     ['', ''],
+      //     ['', ''],
+      //   ],
+      //   status : '',
+      //   tanggal : ''
+      // },
+
+    ]
+
+
+
+    project.forEach(data => {
+
+      let img = $('<div>').attr('class', "col-md-4 p-4 d-flex align-items-center justify-content-center").html("<img src='" + data.gambar + "' alt='' >")
+      let body = $("<div>").attr('class', 'col p-4')
+      let container = $("<div>").attr({ 'class': 'row project-list shadow rounded-2', 'data-aos': 'fade-up' });
+      let stack = $("<div>").attr('class', 'd-flex gap-3 flex-wrap').html("<p class='m-0'>Stack:</p>");
+      for (let i = 0; i < data.stack.length; i++) {
+        $(stack).append($('<a>').attr('class', 'text-decoration-underline m-0').html(data.stack[i]));
+      }
+      let button = $("<div>").attr('class', 'd-flex mt-3 gap-1 align-items-center')
+      if (data.link) {
+        $(button).append($('<a>').attr({ 'class': 'btn btn-outline-light rounded-5', 'href': data.link }).html('Detail'))
+      }
+      $(button).append("<img src='calendar.svg'>");
+      $(button).append($('<p>').attr({ 'class': 'm-0' }).html(data.tanggal))
+      if (data.status == 'Selesai') {
+        $(button).append($('<p>').attr({ 'class': 'm-0 ms-2 text-success' }).html(data.status))
+      } else {
+        $(button).append($('<p>').attr({ 'class': 'm-0 ms-2 text-warning' }).html(data.status))
+      }
+
+      $(body).append($('<h4>').html(data.judul));
+      $(body).append($('<p>').html(data.deskripsi));
+      $(body).append(stack);
+      $(body).append(button);
+      $(container).append(img);
+      $(container).append(body);
+      $('#project-data').append(container);
+    });
+
+
+    keahlian.forEach(data => {
+      $('#keahlian-data').append(`
+      <div data-aos="fade-up" class="skill-item rounded-5 border border-2">
+         <img src="`+ data.icon + `" alt="` + data.nama + `">
+      </div>
+      `);
+    });
+
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop() <= 100) {
+        $('#navbar').attr('style', 'background-color: ##00000000 !important;');
+      } else {
+        $('#navbar').attr('style', 'background-color: #040D12;');
+
+      }
+    });
+
+
+  </script>
+  <script src="bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
